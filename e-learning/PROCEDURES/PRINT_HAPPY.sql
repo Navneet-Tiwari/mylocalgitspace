@@ -8,6 +8,7 @@ as
 begin
 
 dbms_output.put_line('HAPPY');
+dbms_output.put_line('HAPPY2');
 end;
 
 /
