@@ -1,0 +1,6 @@
+--------------------------------------------------------
+--  Ref Constraints for Table REPCAT$_TEMPLATE_REFGROUPS
+--------------------------------------------------------
+
+  ALTER TABLE "SYSTEM"."REPCAT$_TEMPLATE_REFGROUPS" ADD CONSTRAINT "REPCAT$_TEMPLATE_REFGROUPS_FK1" FOREIGN KEY ("REFRESH_TEMPLATE_ID")
+	  REFERENCES "SYSTEM"."REPCAT$_REFRESH_TEMPLATES" ("REFRESH_TEMPLATE_ID") ON DELETE CASCADE ENABLE;

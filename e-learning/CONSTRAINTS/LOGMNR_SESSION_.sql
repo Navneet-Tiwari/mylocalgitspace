@@ -1,0 +1,7 @@
+--------------------------------------------------------
+--  Constraints for Table LOGMNR_SESSION$
+--------------------------------------------------------
+
+  ALTER TABLE "SYSTEM"."LOGMNR_SESSION$" ADD CONSTRAINT "LOGMNR_SESSION_UK1" UNIQUE ("SESSION_NAME") ENABLE;
+  ALTER TABLE "SYSTEM"."LOGMNR_SESSION$" ADD CONSTRAINT "LOGMNR_SESSION_PK" PRIMARY KEY ("SESSION#") ENABLE;
+  ALTER TABLE "SYSTEM"."LOGMNR_SESSION$" MODIFY ("SESSION_NAME" NOT NULL ENABLE);

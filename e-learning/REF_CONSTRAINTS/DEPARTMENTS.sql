@@ -1,0 +1,8 @@
+--------------------------------------------------------
+--  Ref Constraints for Table DEPARTMENTS
+--------------------------------------------------------
+
+  ALTER TABLE "SYSTEM"."DEPARTMENTS" ADD CONSTRAINT "DEPT_LOC_FK" FOREIGN KEY ("LOCATION_ID")
+	  REFERENCES "SYSTEM"."LOCATIONS" ("LOCATION_ID") ENABLE;
+  ALTER TABLE "SYSTEM"."DEPARTMENTS" ADD CONSTRAINT "DEPT_MGR_FK" FOREIGN KEY ("MANAGER_ID")
+	  REFERENCES "SYSTEM"."EMPLOYEES" ("EMPLOYEE_ID") ENABLE;

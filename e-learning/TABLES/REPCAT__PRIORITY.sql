@@ -1,0 +1,30 @@
+--------------------------------------------------------
+--  DDL for Table REPCAT$_PRIORITY
+--------------------------------------------------------
+
+  CREATE TABLE "SYSTEM"."REPCAT$_PRIORITY" 
+   (	"SNAME" VARCHAR2(30), 
+	"PRIORITY_GROUP" VARCHAR2(30), 
+	"PRIORITY" NUMBER, 
+	"RAW_VALUE" RAW(2000), 
+	"CHAR_VALUE" CHAR(255), 
+	"NUMBER_VALUE" NUMBER, 
+	"DATE_VALUE" DATE, 
+	"VARCHAR2_VALUE" VARCHAR2(4000), 
+	"NCHAR_VALUE" NCHAR(500), 
+	"NVARCHAR2_VALUE" NVARCHAR2(1000), 
+	"LARGE_CHAR_VALUE" CHAR(2000)
+   ) ;
+
+   COMMENT ON COLUMN "SYSTEM"."REPCAT$_PRIORITY"."SNAME" IS 'Name of the replicated object group';
+   COMMENT ON COLUMN "SYSTEM"."REPCAT$_PRIORITY"."PRIORITY_GROUP" IS 'Name of the priority group';
+   COMMENT ON COLUMN "SYSTEM"."REPCAT$_PRIORITY"."PRIORITY" IS 'Priority of the value';
+   COMMENT ON COLUMN "SYSTEM"."REPCAT$_PRIORITY"."RAW_VALUE" IS 'Raw value';
+   COMMENT ON COLUMN "SYSTEM"."REPCAT$_PRIORITY"."CHAR_VALUE" IS 'Blank-padded character string';
+   COMMENT ON COLUMN "SYSTEM"."REPCAT$_PRIORITY"."NUMBER_VALUE" IS 'Numeric value';
+   COMMENT ON COLUMN "SYSTEM"."REPCAT$_PRIORITY"."DATE_VALUE" IS 'Date value';
+   COMMENT ON COLUMN "SYSTEM"."REPCAT$_PRIORITY"."VARCHAR2_VALUE" IS 'Character string';
+   COMMENT ON COLUMN "SYSTEM"."REPCAT$_PRIORITY"."NCHAR_VALUE" IS 'NCHAR string';
+   COMMENT ON COLUMN "SYSTEM"."REPCAT$_PRIORITY"."NVARCHAR2_VALUE" IS 'NVARCHAR2 string';
+   COMMENT ON COLUMN "SYSTEM"."REPCAT$_PRIORITY"."LARGE_CHAR_VALUE" IS 'Blank-padded character string over 255 characters';
+   COMMENT ON TABLE "SYSTEM"."REPCAT$_PRIORITY"  IS 'Values and their corresponding priorities in all priority groups in the database';

@@ -1,0 +1,6 @@
+--------------------------------------------------------
+--  Ref Constraints for Table REPCAT$_PARAMETER_COLUMN
+--------------------------------------------------------
+
+  ALTER TABLE "SYSTEM"."REPCAT$_PARAMETER_COLUMN" ADD CONSTRAINT "REPCAT$_PARAMETER_COLUMN_F1" FOREIGN KEY ("SNAME", "ONAME", "CONFLICT_TYPE_ID", "REFERENCE_NAME", "SEQUENCE_NO")
+	  REFERENCES "SYSTEM"."REPCAT$_RESOLUTION" ("SNAME", "ONAME", "CONFLICT_TYPE_ID", "REFERENCE_NAME", "SEQUENCE_NO") ENABLE;

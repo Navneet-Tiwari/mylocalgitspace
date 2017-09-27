@@ -1,0 +1,7 @@
+--------------------------------------------------------
+--  Constraints for Table AQ$_INTERNET_AGENT_PRIVS
+--------------------------------------------------------
+
+  ALTER TABLE "SYSTEM"."AQ$_INTERNET_AGENT_PRIVS" ADD CONSTRAINT "UNQ_PAIRS" UNIQUE ("AGENT_NAME", "DB_USERNAME") ENABLE;
+  ALTER TABLE "SYSTEM"."AQ$_INTERNET_AGENT_PRIVS" MODIFY ("DB_USERNAME" NOT NULL ENABLE);
+  ALTER TABLE "SYSTEM"."AQ$_INTERNET_AGENT_PRIVS" MODIFY ("AGENT_NAME" NOT NULL ENABLE);

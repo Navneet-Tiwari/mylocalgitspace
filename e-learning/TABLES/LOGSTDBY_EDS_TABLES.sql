@@ -1,0 +1,21 @@
+--------------------------------------------------------
+--  DDL for Table LOGSTDBY$EDS_TABLES
+--------------------------------------------------------
+
+  CREATE TABLE "SYSTEM"."LOGSTDBY$EDS_TABLES" 
+   (	"OWNER" VARCHAR2(30), 
+	"TABLE_NAME" VARCHAR2(30), 
+	"SHADOW_TABLE_NAME" VARCHAR2(30), 
+	"BASE_TRIGGER_NAME" VARCHAR2(30), 
+	"SHADOW_TRIGGER_NAME" VARCHAR2(30), 
+	"DBLINK" VARCHAR2(255), 
+	"FLAGS" NUMBER, 
+	"STATE" VARCHAR2(255), 
+	"OBJV" NUMBER, 
+	"OBJ#" NUMBER, 
+	"SOBJ#" NUMBER, 
+	"CTIME" TIMESTAMP (6), 
+	"SPARE1" NUMBER, 
+	"SPARE2" VARCHAR2(255), 
+	"SPARE3" NUMBER
+   ) ;

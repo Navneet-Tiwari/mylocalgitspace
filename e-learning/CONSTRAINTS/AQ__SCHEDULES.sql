@@ -1,0 +1,7 @@
+--------------------------------------------------------
+--  Constraints for Table AQ$_SCHEDULES
+--------------------------------------------------------
+
+  ALTER TABLE "SYSTEM"."AQ$_SCHEDULES" ADD CONSTRAINT "AQ$_SCHEDULES_CHECK" UNIQUE ("JOBNO") ENABLE;
+  ALTER TABLE "SYSTEM"."AQ$_SCHEDULES" ADD CONSTRAINT "AQ$_SCHEDULES_PRIMARY" PRIMARY KEY ("OID", "DESTINATION") ENABLE;
+  ALTER TABLE "SYSTEM"."AQ$_SCHEDULES" MODIFY ("DESTINATION" NOT NULL ENABLE);

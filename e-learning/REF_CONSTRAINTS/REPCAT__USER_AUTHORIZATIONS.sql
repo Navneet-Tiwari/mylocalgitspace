@@ -1,0 +1,6 @@
+--------------------------------------------------------
+--  Ref Constraints for Table REPCAT$_USER_AUTHORIZATIONS
+--------------------------------------------------------
+
+  ALTER TABLE "SYSTEM"."REPCAT$_USER_AUTHORIZATIONS" ADD CONSTRAINT "REPCAT$_USER_AUTHORIZATION_FK2" FOREIGN KEY ("REFRESH_TEMPLATE_ID")
+	  REFERENCES "SYSTEM"."REPCAT$_REFRESH_TEMPLATES" ("REFRESH_TEMPLATE_ID") ON DELETE CASCADE ENABLE;

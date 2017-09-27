@@ -1,0 +1,13 @@
+--------------------------------------------------------
+--  DDL for Table REPCAT$_USER_AUTHORIZATIONS
+--------------------------------------------------------
+
+  CREATE TABLE "SYSTEM"."REPCAT$_USER_AUTHORIZATIONS" 
+   (	"USER_AUTHORIZATION_ID" NUMBER, 
+	"USER_ID" NUMBER, 
+	"REFRESH_TEMPLATE_ID" NUMBER
+   ) ;
+
+   COMMENT ON COLUMN "SYSTEM"."REPCAT$_USER_AUTHORIZATIONS"."USER_AUTHORIZATION_ID" IS 'Internal primary key of the REPCAT$_USER_AUTHORIZATIONS table.';
+   COMMENT ON COLUMN "SYSTEM"."REPCAT$_USER_AUTHORIZATIONS"."USER_ID" IS 'Database user id.';
+   COMMENT ON COLUMN "SYSTEM"."REPCAT$_USER_AUTHORIZATIONS"."REFRESH_TEMPLATE_ID" IS 'Internal primary key of the REPCAT$_REFRESH_TEMPLATES table.';

@@ -1,0 +1,12 @@
+--------------------------------------------------------
+--  Constraints for Table REPCAT$_PRIORITY_GROUP
+--------------------------------------------------------
+
+  ALTER TABLE "SYSTEM"."REPCAT$_PRIORITY_GROUP" ADD CONSTRAINT "REPCAT$_PRIORITY_GROUP_U1" UNIQUE ("SNAME", "PRIORITY_GROUP", "DATA_TYPE_ID", "FIXED_DATA_LENGTH") ENABLE;
+  ALTER TABLE "SYSTEM"."REPCAT$_PRIORITY_GROUP" ADD CONSTRAINT "REPCAT$_PRIORITY_GROUP_PK" PRIMARY KEY ("PRIORITY_GROUP", "SNAME") ENABLE;
+  ALTER TABLE "SYSTEM"."REPCAT$_PRIORITY_GROUP" ADD CONSTRAINT "REPCAT$_PRIORITY_GROUP_C2" CHECK ((data_type_id in (4, 7) and
+                  fixed_data_length is not null)
+              or (data_type_id in (1, 2, 3, 5, 6) and
+                  fixed_data_length is null)) ENABLE;
+  ALTER TABLE "SYSTEM"."REPCAT$_PRIORITY_GROUP" ADD CONSTRAINT "REPCAT$_PRIORITY_GROUP_C1" CHECK (data_type_id in (1, 2, 3, 4, 5, 6, 7)) ENABLE;
+  ALTER TABLE "SYSTEM"."REPCAT$_PRIORITY_GROUP" MODIFY ("DATA_TYPE_ID" CONSTRAINT "REPCAT$_PRIORITY_GROUP_NN1" NOT NULL ENABLE);
